@@ -1,0 +1,17 @@
+.text-md-left{
+  @include media-breakpoint-up(md) {
+    text-align: left;
+}
+}
+ .font-weight-medium{
+      font-weight: 500;
+  } 
+.text-line{
+    text-decoration: line-through;
+}
+  .lh-1{ 
+      line-height: 1;
+  }
+  .lh-2{
+      line-height: 1.2;
+  }
