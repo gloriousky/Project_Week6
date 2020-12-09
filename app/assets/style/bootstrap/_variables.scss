@@ -10,7 +10,7 @@ $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-500: #8D8D8D !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
@@ -41,6 +41,7 @@ $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
+$black:   #000    !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -71,15 +72,15 @@ $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          $gray-500 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
+    "primary":    #916019,
+    "secondary":  #AC8A46,
     "success":    $success,
-    "info":       $info,
+    "info":       #818A91,
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
@@ -142,7 +143,12 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    5: ($spacer * 2),
+    6: ($spacer * 2.5),
+    7: ($spacer * 3),
+    8: ($spacer * 3.5),
+    9: ($spacer * 3.75),
+    10: ($spacer * 4),
   ),
   $spacers
 );
@@ -195,7 +201,7 @@ $paragraph-margin-bottom:   1rem !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 769px,
   lg: 992px,
   xl: 1200px
 ) !default;
@@ -234,7 +240,7 @@ $grid-row-columns:            6 !default;
 $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
 
-$border-width:                1px !default;
+$border-width:                2px !default;
 $border-color:                $gray-300 !default;
 
 $border-radius:               .25rem !default;
@@ -283,6 +289,7 @@ $font-size-base:              1rem !default; // Assumes the browser default, typ
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
+
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -302,7 +309,7 @@ $h6-font-size:                $font-size-base !default;
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.5 !default;
 $headings-color:              null !default;
 
 $display1-size:               6rem !default;
@@ -1140,3 +1147,4 @@ $user-selects: all, auto, none !default;
 
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+

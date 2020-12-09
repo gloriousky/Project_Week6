@@ -12301,4 +12301,148 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none !important;
+  display: block;
+  color: #000;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, p {
+  margin-bottom: 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: normal;
+}
+
+ul, ol, li {
+  list-style: none;
+  padding: 0;
+}
+
+.material-icons {
+  vertical-align: text-top;
+}
+
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #8D8D8D;
+  position: relative;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  .navbar-nav .nav-link {
+    background-color: #fff;
+    color: #8D8D8D;
+    border-bottom: 0px;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #AC8A46;
+    background-color: #f5e6c9;
+    font-size: 16px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-texthide {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-banner {
+  background-image: url(../images/banner.jpg);
+}
+
+.bg-subscribe {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true);
+}
+
+.bg-logo {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume@2x.png?raw=true");
+}
+
+.bg-whitelogo {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfumewhite@2x.png?raw=true");
+}
+
+.bg_hover:hover {
+  background: rgba(167, 166, 166, 0.376);
+  opacity: 0.8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.logo-size {
+  width: 128px;
+  height: 38px;
+}
+/*# sourceMappingURL=all.css.map */
