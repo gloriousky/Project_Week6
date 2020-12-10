@@ -12,43 +12,66 @@
 
 <body>
   <!-- Header -->
-  <div class="container">
-    <nav class="navbar navbar-expand-md align-items-center justify-content-between">
-      <h1>
-        <a href="index.html" class="bg bg-logo bg-cover navbar logo-size">D'Perfume</a>
+  <div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-md align-items-center justify-content-between py-0">
+      <h1 class="pl-3 py-2">
+        <a href="index.html" class="bg bg-texthide bg-logo bg-cover navbar logo-size">D'Perfume</a>
       </h1>
-      <div class="d-flex">
+      <div class="d-flex pr-3 pr-md-0">
           <div class="d-block d-md-none mr-3">
-              <a href="#" class="">
-                  <span class="material-icons">shopping_cart</span>
-              </a>
+            <a class="text-dark d-inline-block d-md-none ml-auto mr-3 position-relative" href="#">
+              <span class="material-icons">shopping_cart</span>
+              <span class="badge badge-pill badge-primary position-absolute"
+                style="top:-5px;right:-15px">3</span>
+            </a>
          </div>
+         <div class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
       </div>
-      <div class="nav-collapse">
+      <div class="collapse navbar-collapse flex-grow-0" id="collapsibleNavbar">
           <ul class="navbar-nav">
               <li class="nav-item order-0"><a href="shop.html" class="nav-link  text-center mr-0 mr-md-5 py-3"><span class="material-icons d-none d-md-inline mr-1">store</span>Product</a></li>
-              <li class="nav-item order-4"><a href="" class="nav-link  text-center mr-0 mr-md-5 py-3"><span class="material-icons d-none d-md-inline mr-1">person</span>Log in</a></li>
+              <li class="nav-item order-4"><a href="login.html" class="nav-link  text-center mr-0 mr-md-5 py-3"><span class="material-icons d-none d-md-inline mr-1">person</span>Log in</a></li>
               <li class="nav-item order-1"><a href="" class="nav-link  text-center mr-0 mr-md-5 py-3"><span class="material-icons d-none d-md-inline mr-1">favorite</span>Wishlist</a></li>
-              <li class="nav-item order-2 d-block d-md-none"><a href="" class="nav-link  text-center">Blog</a></li>
-              <li class="nav-item order-3 d-block d-md-none"><a href="" class="nav-link  text-center">Contact</a></li>
-              <li class="nav-item order-5"><a href="" class="nav-link  text-center py-3"><span class="material-icons d-none d-md-inline mr-1">shopping_cart</span>Cart(3)</a></li>
+              <li class="nav-item order-2 d-block d-md-none"><a href="#" class="nav-link  text-center">Blog</a></li>
+              <li class="nav-item order-3 d-block d-md-none"><a href="#" class="nav-link  text-center">Contact</a></li>
+              <li class="nav-item order-5"><a href="#" class="nav-link  text-center py-3"><span class="material-icons d-none d-md-inline mr-1">shopping_cart</span>Cart(3)</a></li>
           </ul>
       </div>
-    </nav>
-  </div>
+    </nav>        
+</div>
 
 
   <%- contents %>  
 
-  <footer class="footer">
-    
+  <footer class="bg-primary">
+    <div class="container no-gutter">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center py-6 py-md-0">
+          <h2><a class="logo-size bg bg-whitelogo bg-cover bg-texthide mr-4 mr-md-3" href="index.html">D'Perfume</a></h2>
+          <p class='text-white'>© 2020. All Rights Reserved.</p>
+        </div>
+        <ul class="d-none d-md-flex">
+          <li class="mr-6"><a class="text-white h5 py-4" href="shop.html">Product</a></li>
+          <li class="mr-6"><a class="text-white h5 py-4" href="">Blog</a></li>
+          <li><a class="text-white h5 py-4" href="">Contact</a></li>
+        </ul>
+      </div>
+  
+    </div>
   </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-</body>
-
-</html>
+  
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+  
+  </html>
