@@ -11,20 +11,28 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-md align-items-center justify-content-between">
-          <h1>
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-md align-items-center justify-content-between py-0">
+          <h1 class="pl-3 py-2">
             <a href="index.html" class="bg bg-texthide bg-logo bg-cover navbar logo-size">D'Perfume</a>
           </h1>
-          <div class="d-flex">
+          <div class="d-flex pr-3 pr-md-0">
               <div class="d-block d-md-none mr-3">
-                <a class="text-secondary d-inline-block d-md-none ml-auto mr-3 position-relative" href="#">
+                <a class="text-dark d-inline-block d-md-none ml-auto mr-3 position-relative" href="#">
                   <span class="material-icons">shopping_cart</span>
                   <span class="badge badge-pill badge-primary position-absolute"
                     style="top:-5px;right:-15px">3</span>
                 </a>
              </div>
+             <div class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+              <span></span>
+              <span></span>
+              <span></span>
+    
+            </div>
           </div>
+          <div class="collapse navbar-collapse flex-grow-0" id="collapsibleNavbar">
               <ul class="navbar-nav">
                   <li class="nav-item order-0"><a href="shop.html" class="nav-link  text-center mr-0 mr-md-5 py-3"><span class="material-icons d-none d-md-inline mr-1">store</span>Product</a></li>
                   <li class="nav-item order-4"><a href="login.html" class="nav-link  text-center mr-0 mr-md-5 py-3"><span class="material-icons d-none d-md-inline mr-1">person</span>Log in</a></li>
@@ -34,17 +42,17 @@
                   <li class="nav-item order-5"><a href="#" class="nav-link  text-center py-3"><span class="material-icons d-none d-md-inline mr-1">shopping_cart</span>Cart(3)</a></li>
               </ul>
           </div>
-        </nav>
+        </nav>        
     </div>
 <!--Banner  -->
     <div class="vh-100 bg bg-banner bg-cover d-flex align-items-center mb-md-9 mb-6">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-5 offset-md-7 mb-3">
+                <div class="col-md-5 offset-md-7 mb-3">
                     <h2 class="text-white font-weight-bold h1">Perfume your day</h2>
                     <p class="text-white h4">A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.</p>
                 </div>
-                <div class="col-12 col-md-4 offset-md-7">
+                <div class="col-md-4 offset-md-7">
                     <a href="shop.html" class="bg_hover text-white h3 text-center font-weight-bold border border-white rounded-pill py-3">Shop now</a>
                 </div>
             </div>
@@ -212,7 +220,7 @@
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center py-6 py-md-0">
         <h2><a class="logo-size bg bg-whitelogo bg-cover bg-texthide mr-4 mr-md-3" href="index.html">D'Perfume</a></h2>
-        <p class='text-xs text-mb-sm text-white'>© 2020. All Rights Reserved.</p>
+        <p class='text-white'>© 2020. All Rights Reserved.</p>
       </div>
       <ul class="d-none d-md-flex">
         <li class="mr-6"><a class="text-white h5 py-4" href="shop.html">Product</a></li>
