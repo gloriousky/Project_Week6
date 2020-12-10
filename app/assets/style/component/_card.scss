@@ -1,4 +1,14 @@
+.card{
+    border:none;
+}
 .card_img{
-    width: 100%;
-    margin-bottom: 2px;
+    width:100%;
+}
+.card-link{
+    @media (max-width:1200px){
+        font-size:1rem;
+    }
+    @media (max-width:768px){
+        font-size:1.5rem;
+    }
 }

@@ -18,12 +18,13 @@
           </h1>
           <div class="d-flex">
               <div class="d-block d-md-none mr-3">
-                  <a href="#" class="">
-                      <span class="material-icons">shopping_cart</span>
-                  </a>
+                <a class="text-secondary d-inline-block d-md-none ml-auto mr-3 position-relative" href="#">
+                  <span class="material-icons">shopping_cart</span>
+                  <span class="badge badge-pill badge-primary position-absolute"
+                    style="top:-5px;right:-15px">3</span>
+                </a>
              </div>
           </div>
-          <div class="nav-collapse">
               <ul class="navbar-nav">
                   <li class="nav-item order-0"><a href="shop.html" class="nav-link  text-center mr-0 mr-md-5 py-3"><span class="material-icons d-none d-md-inline mr-1">store</span>Product</a></li>
                   <li class="nav-item order-4"><a href="login.html" class="nav-link  text-center mr-0 mr-md-5 py-3"><span class="material-icons d-none d-md-inline mr-1">person</span>Log in</a></li>
@@ -90,23 +91,23 @@
     </div>
   </li>
   <li class="row no-gutters align-items-center">
-    <div class="col-lg-6 mb-2 mb-md-0">
+    <div class="col-md-6 mb-2 mb-md-0">
       <img class="img-fluid" src="assets/images/index5.jpg" alt="perfume">
     </div>
-    <div class="col-lg-4 offset-md-1">
+    <div class="col-md-4 offset-lg-1">
       <div class=" pl-0 pl-md-3">
         <ol>
-          <li class="mb-3 mb-lg-5">
+          <li class="mb-3 mb-md-5">
             <h4 class="font-weight-bold mb-1 mb-md-0">1.<br>Levels of Preventive Maintenance Compliance</h4>
             <p>The core idea of preventative maintenance is the performance of proactive actions against unscheduled
               downtime in order to identify potential defects before they evolve into something more severe.</p>
           </li>
-          <li class="mb-3 mb-lg-5">
+          <li class="mb-3 mb-md-5">
             <h4 class="font-weight-bold mb-1 mb-md-0">2.<br>Percentage of Planned Maintenance</h4>
             <p>The planned maintenance percentage is the total planned maintenance time in your CMMS software over a
               date range over the total number of hours of a service performed by the technicians.</p>
           </li>
-          <li class="mb-3 mb-lg-5">
+          <li class="mb-3 mb-md-5">
             <h4 class="font-weight-bold">3.<br>Critical percentage of planned maintenance</h4>
             <p>Calculating the critical percentage of planned maintenance will help you prioritize the most important
               operations that should be performed immediately.</p>
@@ -116,18 +117,18 @@
         </a>
       </div>
     </div>
-  </li>
-</ul>
-<!-- On sale -->
-<div class="bg-light py-5 py-md-6 mb-6 mb-md-9">
+  </li> 
+  </ul>
+ <!-- On sale -->
+ <div class="bg-light py-5 py-md-6 mb-6 mb-md-9">
     <div class="container">
         <ul class="row">
             <li class="col-md-4 mb-5 mb-md-0">
                 <div class="card">
-                    <a href="product.html" class="hover">
+                    <a href="product.html" class="card_hover">
                         <img src="assets/images/index6.jpg" alt="perfume" class="card_img"></a>
-                    <div class="card_item">
-                        <h4><a href="product.html" class="card_title">Poppy & Barley</a></h4>
+                    <div class="bg-light">
+                        <h4><a href="product.html" class="card-link">Poppy & Barley</a></h4>
                         <p class="mb-md-3">Jo Malone</p>
                         <p>NT$1380<span class="ml-2 text-line">NT$1580</span></p>
                     </div>
@@ -135,10 +136,10 @@
             </li>
             <li class="col-md-4 mb-5 mb-md-0">
                 <div class="card">
-                    <a href="product.html" class="hover">
+                    <a href="product.html" class="card_hover">
                         <img src="assets/images/index7.jpg" alt="perfume" class="card_img"></a>
-                    <div class="card_item">
-                        <h4><a href="product.html" class="card_title">Body Wash</a></h4>
+                    <div class="bg-light">
+                        <h4><a href="product.html" class="card-link">Body Wash</a></h4>
                         <p class="mb-md-3">Curology</p>
                         <p>NT$1580</p>
                     </div>
@@ -150,8 +151,8 @@
                         <p class="text-white h3 font-weight-bold position-absolute">Sold out</p>                                
                         <img src="assets/images/index8.jpg" alt="perfume" class="card_img">
                     </div>
-                    <div class="card_item ">
-                        <h4><a href="product.html" class="card_title">Apple Cider Vinegar Capsule</a></h4>
+                    <div class="bg-light">
+                        <h4><a href="product.html" class="card-link">Apple Cider Vinegar Capsule</a></h4>
                         <p class="mb-md-3">Tonik</p>
                         <p>NT$1580</p>
                     </div>
@@ -159,35 +160,70 @@
             </li>
         </ul>
     </div>
-</div>
-<!--Recycling-->
-<div class="container mb-5 mb-md-9">
+ </div>
+
+<!-- Recycling -->
+<div class="container mb-6 mb-md-9">
   <div class="row align-items-center">
-    <div class="col-md-8 mb-3 mb-md-0 js-left">
+    <div class=" col-md-8 mb-3 mb-md-0">
       <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index9.jpg?raw=true"
         alt="perfume" class="img-fluid">
     </div>
-    <div class="col-md-4">
-      <h3 class="font-weight-bold">Bottle-Recycling</h3>
-      <p class="mb-3 mb-md-3">Recycle your used empty bottles and be rewarded!</p>
+    <div class=" col-md-4  js-right">
+      <h3 class="h2 font-weight-bold">Bottle-Recycling</h3>
+      <p class="h5 mb-3 mb-md-3">Recycle your used empty bottles and be rewarded!</p>
       <p class="mb-3 mb-md-3">For the past 10 years, we have collected over 800,000 bottles through Empty Bottle
         Recycling
         Campaign and
         planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000
         bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.
       </p>
-      <a href="product.html" class="font-weight-bold text-secondary">查看更多</a>
+      <a href="product.html" class="text-secondary font-weight-bold">查看更多</a>
     </div>
   </div>
 </div>
 
+<!-- subscribe -->
+<div class="h-subscribe bg bg-subscribe bg-cover d-flex align-items-end pb-13">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 js-subscribe-text">
+        <p class="text-dark h3 font-weight-bold mb-3">記得<br>訂閱以獲取更多資訊！
+        </p>
+        <form>
+          <div class="form-group row no-gutters">
+            <div class="col-7">
+              <input type="email" class="form-control form-control-lg rounded-left border border-primary"
+                value="" placeholder="Your email address" required>
+            </div>
+            <div class="col-5">
+              <button class="btn btn-primary btn-lg rounded-right" type="submit">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- footer -->
+<footer class="bg-primary">
+  <div class="container no-gutter">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center py-6 py-md-0">
+        <h2><a class="logo-size bg bg-whitelogo bg-cover bg-texthide mr-4 mr-md-3" href="index.html">D'Perfume</a></h2>
+        <p class='text-xs text-mb-sm text-white'>© 2020. All Rights Reserved.</p>
+      </div>
+      <ul class="d-none d-md-flex">
+        <li class="mr-6"><a class="text-white h5 py-4" href="shop.html">Product</a></li>
+        <li class="mr-6"><a class="text-white h5 py-4" href="">Blog</a></li>
+        <li><a class="text-white h5 py-4" href="">Contact</a></li>
+      </ul>
+    </div>
 
+  </div>
+</footer>
 
-
-  <footer class="footer">
-    
-  </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
