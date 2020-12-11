@@ -557,13 +557,13 @@ pre code {
 
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 540px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 769px) {
   .container, .container-sm, .container-md {
-    max-width: 720px;
+    max-width: 992px;
   }
 }
 
@@ -13260,6 +13260,12 @@ ul, ol, li {
   }
 }
 
+@media (max-width: 992px) {
+  .card-title {
+    font-size: 1.25rem;
+  }
+}
+
 .card-body {
   padding: 0;
 }
@@ -13455,5 +13461,9 @@ footer ul {
 
 .h-subscribe {
   height: 600px;
+}
+
+.page-link {
+  border: none;
 }
 /*# sourceMappingURL=all.css.map */
