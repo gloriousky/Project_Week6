@@ -13240,6 +13240,10 @@ ul, ol, li {
   vertical-align: text-top;
 }
 
+.card {
+  border: none;
+}
+
 .card_img {
   width: 100%;
 }
