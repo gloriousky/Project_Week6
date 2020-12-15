@@ -10181,6 +10181,9 @@ ul, ol, li {
   display: -ms-flexbox;
   display: flex; }
 
+.card__bg__light {
+  background-color: #E0E0E0; }
+
 .navbar {
   position: relative;
   display: -webkit-box;
@@ -10310,6 +10313,20 @@ ul, ol, li {
   background-color: #fff;
   color: #AC8A46; }
 
+.form__hover:focus {
+  background-color: #d8b777;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s; }
+
+.card__hover:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s; }
+
 @media (min-width: 769px) {
   .text-md-left {
     text-align: left; } }
@@ -10325,6 +10342,14 @@ ul, ol, li {
 
 .lh-2 {
   line-height: 1.2; }
+
+@media (min-width: 769px) {
+  .position-md-absolute {
+    position: absolute; } }
+
+@media (min-width: 769px) {
+  .right-md-0 {
+    right: 0; } }
 
 .logo-size {
   width: 128px;
