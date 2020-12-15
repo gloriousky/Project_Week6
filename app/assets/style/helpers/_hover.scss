@@ -4,3 +4,15 @@
         color:#AC8A46;
     }
 }
+.form__hover{
+    &:focus{
+        background-color:#d8b777;
+        transition:0.8s;
+    }
+}
+.card__hover{
+    &:hover{
+        transform:scale(0.9);
+        transition:0.6s;
+    }
+}

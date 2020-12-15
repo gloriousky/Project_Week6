@@ -1,0 +1,10 @@
+.position-md-absolute{
+    @media (min-width:769px){
+        position: absolute;
+    }
+}
+.right-md-0{
+    @media (min-width:769px){
+       right: 0;
+    }
+}
