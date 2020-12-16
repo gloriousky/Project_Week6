@@ -38,11 +38,13 @@ current: login
             <form action="" class="form">
                 <div class="form-group">
                     <label for="account">帳號</label>
-                    <input type="email" class="form-control form__hover" id="account" name="account" placeholder="email@example.com">
+                    <input type="email" class="form-control form__hover" id="account" name="account" placeholder="email@example.com" required>
+                    <div class="invalid-feedback">請輸入帳號</div>
                 </div>
                 <div class="form-group mb-6">
                     <label for="password">密碼</label>
-                    <input type="password" name="password" class="form-control  form__hover" id="password" placeholder="Password">
+                    <input type="password" name="password" class="form-control form__hover" id="password" placeholder="Password" required>
+                    <div class="invalid-feedback">請輸入密碼</div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <a href="" class="text-primary font-weight-bold">忘記密碼</a>
