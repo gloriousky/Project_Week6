@@ -35,22 +35,22 @@ current: login
         </div>
         <div class="col-md-4 mb-13 mb-md-0">
             <h2>Log in</h2>
-            <form action="" class="form">
+            <form action="" class="js-login-form">
                 <div class="form-group">
                     <label for="account">帳號</label>
-                    <input type="email" class="form-control was-validated form__hover" id="account" name="account" placeholder="email@example.com" required>
+                    <input type="email" class="form-control js-account was-validated form__hover" id="account" name="account" placeholder="email@example.com" required>
                     <div class="invalid-feedback">請輸入帳號</div>
                 </div>
                 <div class="form-group mb-6">
                     <label for="password">密碼</label>
-                    <input type="password" name="password" class="form-control was-validated form__hover" id="password" placeholder="Password" required>
+                    <input type="password" name="password" class="form-control js-password form__hover" id="password" placeholder="Password" required>
                     <div class="invalid-feedback">請輸入密碼</div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <a href="" class="text-primary font-weight-bold">忘記密碼</a>
                     <div class="d-flex">
                         <button class="btn border-primary text-primary mr-2">註冊</button>
-                        <button type="submit" class="btn btn-primary">登入</button>
+                        <button type="submit" class="btn btn-primary js-login-click">登入</button>
                     </div>
                 </div>
             </form>

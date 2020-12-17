@@ -30,3 +30,16 @@
         transition: all 0.5s;
     }
 }
+
+@mixin bg($name,$h){
+    $url:'../images/' + $name;
+    background-image: url($url);
+    height: $h;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.drop-shadow{
+    -webkit-filter:drop-shadow(5px 5px 5px #333);
+    }
