@@ -10185,7 +10185,7 @@ ul, ol, li {
   background-color: #E0E0E0; }
 
 .navbar {
-  position: relative;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10308,6 +10308,9 @@ ul, ol, li {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
+
+.drop-shadow {
+  -webkit-filter: drop-shadow(5px 5px 5px #333); }
 
 .page-link:hover {
   background-color: #fff;
