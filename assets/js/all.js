@@ -229,6 +229,24 @@ $(window).scroll(function (e) {
     $('.navbar').removeClass('bg-white');
   }
 });
+$(function () {
+  $(window).scroll(function () {
+    if ($(window).scrollTop() <= 0) {
+      /* 要滑動到選單的距離 */
+      $('navbar').addClass('bg-white');
+      /* 幫選單加上固定效果 */
+
+      $('navbar').removeClass('bg-light');
+      /* 幫選單加上固定效果 */
+    } else {
+      $('navbar').addClass('bg-light');
+      /* 移除選單固定效果 */
+
+      $('navbar').removeClass('bg-white');
+      /* 移除選單固定效果 */
+    }
+  });
+});
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
