@@ -34,7 +34,7 @@ $(document).ready(function () {
         $('.js-password').focus();
       }
     } else {
-      window.location.href = 'https://gloriousky.github.io/Project_Week6/member.html';
+      window.cell.href = 'https://gloriousky.github.io/Project_Week6/member.html';
       $('.js-password').removeClass('is-invalid');
       $('.js-account').val('');
       $('.js-password').val('');
@@ -253,9 +253,9 @@ $.ajax({
   dataType: 'json',
   success: function success(data) {
     console.log(data);
-    console.log('location:', data.results[0].location);
-    var location = data.results[0].location;
-    $('.col-md-3 .ml-2').append(location.country);
+    console.log('cell:', data.results[0].cell);
+    var cell = data.results[0].cell;
+    $('.col-md-3 .ml-2').append(cell);
   }
 });
 "use strict";
