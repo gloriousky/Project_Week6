@@ -255,7 +255,7 @@ $.ajax({
     console.log(data);
     console.log('cell:', data.results[0].cell);
     var cell = data.results[0].cell;
-    $('.col-md-3 .ml-2').append(cell);
+    $('.col-md-3 .js-code').append(cell);
   }
 });
 "use strict";
