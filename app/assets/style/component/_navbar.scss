@@ -23,7 +23,7 @@
       color:#fff;
       border-bottom:1px solid #fff;
       &:hover{
-          color:#fff;
+          color:rgb(238, 201, 201);
       }
       @include media-breakpoint-up(md) {
           background-color: #fff;
@@ -31,7 +31,6 @@
           border-bottom:0px;
           &:hover{
             color:#AC8A46;
-            background-color:#f5e6c9;
             font-size: 16px;
             transition: all 0.3s;
           }

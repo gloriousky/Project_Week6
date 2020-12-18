@@ -71,156 +71,155 @@ $(document).ready(function () {
     }
   });
 });
-gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.create({
-  end: "bottom 25%"
-});
-gsap.from(".js-banner", {
-  duration: 2,
-  filter: 'grayscale(100%) blur(10px)',
-  scrollTrigger: {
-    trigger: ".js-banner"
-  }
-});
-gsap.from(".js-banner-text", {
-  duration: 2,
-  opacity: 0,
-  y: 200,
-  scrollTrigger: {
-    trigger: ".js-banner"
-  }
-});
-gsap.from(".js-productFirst-text", {
-  duration: 2,
-  y: -150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-productFirst-text",
-    scrub: true
-  }
-});
-gsap.from(".js-productFirst-img", {
-  duration: 2,
-  y: 150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-productFirst-text",
-    scrub: true,
-    start: "center bottom"
-  }
-});
-gsap.from(".js-productSecond-text", {
-  duration: 2,
-  y: -150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-productSecond-text",
-    scrub: true
-  }
-});
-gsap.from(".js-productSecond-img", {
-  duration: 2,
-  y: 150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-productSecond-text",
-    scrub: true
-  }
-});
-gsap.from(".js-productThird-text", {
-  duration: 2,
-  y: -150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-productThird-text",
-    scrub: true
-  }
-});
-gsap.from(".js-productThird-img", {
-  duration: 2,
-  y: 150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-productThird-text",
-    scrub: true
-  }
-});
-gsap.from(".js-productFouth-img", {
-  duration: 2,
-  y: 150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-productFouth-text",
-    scrub: true
-  }
-});
-gsap.from(".js-productFouth-text", {
-  duration: 2,
-  y: -150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-productFouth-text",
-    scrub: true
-  }
-});
-gsap.from(".js-product-list1", {
-  duration: 1,
-  y: 150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-product-list1"
-  }
-});
-gsap.from(".js-product-list2", {
-  duration: 1,
-  y: 150,
-  opacity: 0,
-  delay: 0.2,
-  scrollTrigger: {
-    trigger: ".js-product-list1"
-  }
-});
-gsap.from(".js-product-list3", {
-  duration: 1,
-  y: 150,
-  opacity: 0,
-  delay: 0.4,
-  scrollTrigger: {
-    trigger: ".js-product-list1"
-  }
-});
-gsap.from(".js-left", {
-  duration: 1,
-  x: -150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-left"
-  }
-});
-gsap.from(".js-right", {
-  duration: 1,
-  x: 150,
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".js-left"
-  }
-});
-gsap.from(".js-subscribe", {
-  duration: 2,
-  filter: 'grayscale(100%) blur(10px)',
-  scrollTrigger: {
-    trigger: ".js-subscribe"
-  }
-});
-gsap.from(".js-subscribe-text", {
-  duration: 2,
-  opacity: 0,
-  y: 200,
-  scrollTrigger: {
-    trigger: ".js-subscribe"
-  }
-});
-
+// gsap.registerPlugin(ScrollTrigger);
+// ScrollTrigger.create({
+//   end: "bottom 25%"
+// });
+// gsap.from(".js-banner", {
+//   duration: 2,
+//   filter: 'grayscale(100%) blur(10px)',
+//   scrollTrigger: {
+//     trigger: ".js-banner"
+//   }
+// });
+// gsap.from(".js-banner-text", {
+//   duration: 2,
+//   opacity: 0,
+//   y: 200,
+//   scrollTrigger: {
+//     trigger: ".js-banner"
+//   }
+// });
+// gsap.from(".js-productFirst-text", {
+//   duration: 2,
+//   y: -150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-productFirst-text",
+//     scrub: true
+//   }
+// });
+// gsap.from(".js-productFirst-img", {
+//   duration: 2,
+//   y: 150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-productFirst-text",
+//     scrub: true,
+//     start: "center bottom"
+//   }
+// });
+// gsap.from(".js-productSecond-text", {
+//   duration: 2,
+//   y: -150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-productSecond-text",
+//     scrub: true
+//   }
+// });
+// gsap.from(".js-productSecond-img", {
+//   duration: 2,
+//   y: 150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-productSecond-text",
+//     scrub: true
+//   }
+// });
+// gsap.from(".js-productThird-text", {
+//   duration: 2,
+//   y: -150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-productThird-text",
+//     scrub: true
+//   }
+// });
+// gsap.from(".js-productThird-img", {
+//   duration: 2,
+//   y: 150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-productThird-text",
+//     scrub: true
+//   }
+// });
+// gsap.from(".js-productFouth-img", {
+//   duration: 2,
+//   y: 150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-productFouth-text",
+//     scrub: true
+//   }
+// });
+// gsap.from(".js-productFouth-text", {
+//   duration: 2,
+//   y: -150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-productFouth-text",
+//     scrub: true
+//   }
+// });
+// gsap.from(".js-product-list1", {
+//   duration: 1,
+//   y: 150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-product-list1"
+//   }
+// });
+// gsap.from(".js-product-list2", {
+//   duration: 1,
+//   y: 150,
+//   opacity: 0,
+//   delay: 0.2,
+//   scrollTrigger: {
+//     trigger: ".js-product-list1"
+//   }
+// });
+// gsap.from(".js-product-list3", {
+//   duration: 1,
+//   y: 150,
+//   opacity: 0,
+//   delay: 0.4,
+//   scrollTrigger: {
+//     trigger: ".js-product-list1"
+//   }
+// });
+// gsap.from(".js-left", {
+//   duration: 1,
+//   x: -150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-left"
+//   }
+// });
+// gsap.from(".js-right", {
+//   duration: 1,
+//   x: 150,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".js-left"
+//   }
+// });
+// gsap.from(".js-subscribe", {
+//   duration: 2,
+//   filter: 'grayscale(100%) blur(10px)',
+//   scrollTrigger: {
+//     trigger: ".js-subscribe"
+//   }
+// });
+// gsap.from(".js-subscribe-text", {
+//   duration: 2,
+//   opacity: 0,
+//   y: 200,
+//   scrollTrigger: {
+//     trigger: ".js-subscribe"
+//   }
+// });
 
 
 
@@ -244,5 +243,19 @@ $(function() {
       $('navbar').removeClass('bg-white'); /* 移除選單固定效果 */
     }
   });
+});
+
+$(document).ready(function() {
+
+});
+$.ajax({
+  url: 'https://randomuser.me/api/',
+  dataType: 'json',
+  success: function(data) {
+    console.log(data);
+    console.log('location:',data.results[0].location);
+    var location = data.results[0].location;
+    $('.col-md-3 .ml-2').append(location.country)
+  }  
 });
 //# sourceMappingURL=all.js.map
