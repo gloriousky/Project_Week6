@@ -34,7 +34,7 @@ $(document).ready(function () {
         $('.js-password').focus();
       }
     } else {
-      window.cell.href = 'https://gloriousky.github.io/Project_Week6/member.html';
+      window.location.href = 'https://gloriousky.github.io/Project_Week6/member.html';
       $('.js-password').removeClass('is-invalid');
       $('.js-account').val('');
       $('.js-password').val('');
