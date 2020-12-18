@@ -10220,7 +10220,7 @@ ul, ol, li {
     color: #fff;
     border-bottom: 1px solid #fff; }
     .navbar-nav .nav-link:hover {
-      color: #fff; }
+      color: #eec9c9; }
     @media (min-width: 769px) {
       .navbar-nav .nav-link {
         background-color: #fff;
@@ -10228,7 +10228,6 @@ ul, ol, li {
         border-bottom: 0px; }
         .navbar-nav .nav-link:hover {
           color: #AC8A46;
-          background-color: #f5e6c9;
           font-size: 16px;
           -webkit-transition: all 0.3s;
           -o-transition: all 0.3s;
