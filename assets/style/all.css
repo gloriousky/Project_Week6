@@ -10289,6 +10289,9 @@ ul, ol, li {
 .bg-cover {
   background-size: cover; }
 
+.h-banner {
+  height: calc(100vh - 56px); }
+
 .bg-banner {
   background-image: url(../images/banner.jpg); }
 
