@@ -221,29 +221,27 @@ $(document).ready(function () {
 //   }
 // });
 
+// $(window).scroll(function (e) {  
+//   if ($(window).scrollTop() <= 0) {
+//     $('.navbar').addClass('bg-white');
+//     $('.navbar').removeClass('bg-light');
+//   } else {
+//     $('.navbar').addClass('bg-light');
+//     $('.navbar').removeClass('bg-white');
+//   }
+// });
 
-
-$(window).scroll(function (e) {  
-  if ($(window).scrollTop() <= 0) {
-    $('.navbar').addClass('bg-white');
-    $('.navbar').removeClass('bg-light');
-  } else {
-    $('.navbar').addClass('bg-light');
-    $('.navbar').removeClass('bg-white');
-  }
-});
-
-$(function() {
-  $(window).scroll(function() {
-    if ($(window).scrollTop() <= 0)  {          /* 要滑動到選單的距離 */
-       $('navbar').addClass('bg-white');   /* 幫選單加上固定效果 */
-       $('navbar').removeClass('bg-light');   /* 幫選單加上固定效果 */
-    } else {
-      $('navbar').addClass('bg-light'); /* 移除選單固定效果 */
-      $('navbar').removeClass('bg-white'); /* 移除選單固定效果 */
-    }
-  });
-});
+// $(function() {
+//   $(window).scroll(function() {
+//     if ($(window).scrollTop() <= 0)  {          /* 要滑動到選單的距離 */
+//        $('navbar').addClass('bg-white');   /* 幫選單加上固定效果 */
+//        $('navbar').removeClass('bg-light');   /* 幫選單加上固定效果 */
+//     } else {
+//       $('navbar').addClass('bg-light'); /* 移除選單固定效果 */
+//       $('navbar').removeClass('bg-white'); /* 移除選單固定效果 */
+//     }
+//   });
+// });
 
 $(document).ready(function() {
 
@@ -255,7 +253,22 @@ $.ajax({
     console.log(data);
     console.log('cell:',data.results[0].cell);
     var cell = data.results[0].cell;
-    $('.col-md-3 .js-code').append(cell)
+    $('.js-number').append(cell)
   }  
 });
+
+$(document).ready(function() {
+
+});
+$.ajax({
+  url: 'https://randomuser.me/api/',
+  dataType: 'json',
+  success: function(data) {
+    console.log(data);
+    console.log('account:',data.results[0].location);
+    var location = data.results[0].location;
+    $('.js-account').append(location.postcode)
+  }  
+});
+
 //# sourceMappingURL=all.js.map
