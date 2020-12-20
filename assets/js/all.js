@@ -108,16 +108,6 @@ $.ajax({
   }
 });
 $(document).ready(function () {});
-$.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function success(data) {
-    console.log(data);
-    console.log('account:', data.results[0].location);
-    var location = data.results[0].location;
-    $('.js-account').append(location.postcode);
-  }
-});
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
