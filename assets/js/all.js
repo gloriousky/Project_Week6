@@ -70,156 +70,7 @@ $(document).ready(function () {
       $('.js-password-form').removeClass('was-validated');
     }
   });
-}); // gsap.registerPlugin(ScrollTrigger);
-// ScrollTrigger.create({
-//   end: "bottom 25%"
-// });
-// gsap.from(".js-banner", {
-//   duration: 2,
-//   filter: 'grayscale(100%) blur(10px)',
-//   scrollTrigger: {
-//     trigger: ".js-banner"
-//   }
-// });
-// gsap.from(".js-banner-text", {
-//   duration: 2,
-//   opacity: 0,
-//   y: 200,
-//   scrollTrigger: {
-//     trigger: ".js-banner"
-//   }
-// });
-// gsap.from(".js-productFirst-text", {
-//   duration: 2,
-//   y: -150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-productFirst-text",
-//     scrub: true
-//   }
-// });
-// gsap.from(".js-productFirst-img", {
-//   duration: 2,
-//   y: 150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-productFirst-text",
-//     scrub: true,
-//     start: "center bottom"
-//   }
-// });
-// gsap.from(".js-productSecond-text", {
-//   duration: 2,
-//   y: -150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-productSecond-text",
-//     scrub: true
-//   }
-// });
-// gsap.from(".js-productSecond-img", {
-//   duration: 2,
-//   y: 150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-productSecond-text",
-//     scrub: true
-//   }
-// });
-// gsap.from(".js-productThird-text", {
-//   duration: 2,
-//   y: -150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-productThird-text",
-//     scrub: true
-//   }
-// });
-// gsap.from(".js-productThird-img", {
-//   duration: 2,
-//   y: 150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-productThird-text",
-//     scrub: true
-//   }
-// });
-// gsap.from(".js-productFouth-img", {
-//   duration: 2,
-//   y: 150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-productFouth-text",
-//     scrub: true
-//   }
-// });
-// gsap.from(".js-productFouth-text", {
-//   duration: 2,
-//   y: -150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-productFouth-text",
-//     scrub: true
-//   }
-// });
-// gsap.from(".js-product-list1", {
-//   duration: 1,
-//   y: 150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-product-list1"
-//   }
-// });
-// gsap.from(".js-product-list2", {
-//   duration: 1,
-//   y: 150,
-//   opacity: 0,
-//   delay: 0.2,
-//   scrollTrigger: {
-//     trigger: ".js-product-list1"
-//   }
-// });
-// gsap.from(".js-product-list3", {
-//   duration: 1,
-//   y: 150,
-//   opacity: 0,
-//   delay: 0.4,
-//   scrollTrigger: {
-//     trigger: ".js-product-list1"
-//   }
-// });
-// gsap.from(".js-left", {
-//   duration: 1,
-//   x: -150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-left"
-//   }
-// });
-// gsap.from(".js-right", {
-//   duration: 1,
-//   x: 150,
-//   opacity: 0,
-//   scrollTrigger: {
-//     trigger: ".js-left"
-//   }
-// });
-// gsap.from(".js-subscribe", {
-//   duration: 2,
-//   filter: 'grayscale(100%) blur(10px)',
-//   scrollTrigger: {
-//     trigger: ".js-subscribe"
-//   }
-// });
-// gsap.from(".js-subscribe-text", {
-//   duration: 2,
-//   opacity: 0,
-//   y: 200,
-//   scrollTrigger: {
-//     trigger: ".js-subscribe"
-//   }
-// });
-// $(window).scroll(function (e) {  
+}); // $(window).scroll(function (e) {  
 //   if ($(window).scrollTop() <= 0) {
 //     $('.navbar').addClass('bg-white');
 //     $('.navbar').removeClass('bg-light');
@@ -228,17 +79,22 @@ $(document).ready(function () {
 //     $('.navbar').removeClass('bg-white');
 //   }
 // });
-// $(function() {
-//   $(window).scroll(function() {
-//     if ($(window).scrollTop() <= 0)  {          /* 要滑動到選單的距離 */
-//        $('navbar').addClass('bg-white');   /* 幫選單加上固定效果 */
-//        $('navbar').removeClass('bg-light');   /* 幫選單加上固定效果 */
-//     } else {
-//       $('navbar').addClass('bg-light'); /* 移除選單固定效果 */
-//       $('navbar').removeClass('bg-white'); /* 移除選單固定效果 */
-//     }
-//   });
-// });
+//返回頁首
+
+var scroll_top = 0;
+var goTop = document.querySelector('.goTop');
+
+window.onscroll = function () {
+  var scroll_top = window.scrollY;
+  console.log(scroll_top);
+
+  if (scroll_top > 80) {
+    goTop.classList.remove('d-none');
+  } else {
+    goTop.classList.add('d-none');
+  }
+}; //會員修改頁面變數
+
 
 $(document).ready(function () {});
 $.ajax({

@@ -10289,9 +10289,6 @@ ul, ol, li {
 .bg-cover {
   background-size: cover; }
 
-.h-banner {
-  height: calc(100vh - 56px); }
-
 .bg-banner {
   background-image: url(../images/banner.jpg); }
 
@@ -10332,6 +10329,41 @@ ul, ol, li {
   -o-transition: 0.6s;
   transition: 0.6s; }
 
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); } }
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
 @media (min-width: 769px) {
   .text-md-left {
     text-align: left; } }
@@ -10362,6 +10394,22 @@ ul, ol, li {
 
 footer ul {
   margin-bottom: 0; }
+
+.goTop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #916019;
+  color: #f8f9fa;
+  -webkit-box-shadow: 1px 1px 10px #8D8D8D !important;
+  box-shadow: 1px 1px 10px #8D8D8D !important;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10; }
 
 @media (max-width: 991px) {
   .card_item .card_title {
