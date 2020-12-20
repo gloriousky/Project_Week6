@@ -93,21 +93,7 @@ window.onscroll = function () {
   } else {
     goTop.classList.add('d-none');
   }
-}; //會員修改頁面變數
-
-
-$(document).ready(function () {});
-$.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function success(data) {
-    console.log(data);
-    console.log('cell:', data.results[0].cell);
-    var cell = data.results[0].cell;
-    $('.js-number').append(cell);
-  }
-});
-$(document).ready(function () {});
+};
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
