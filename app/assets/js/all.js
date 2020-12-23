@@ -97,33 +97,4 @@ window.onscroll = function () {
   }
 };
 
-//會員修改頁面變數
-$(document).ready(function() {
-
-});
-$.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function(data) {
-    console.log(data);
-    console.log('cell:',data.results[0].cell);
-    var cell = data.results[0].cell;
-    $('.js-number').append(cell)
-  }  
-});
-
-$(document).ready(function() {
-
-});
-$.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function(data) {
-    console.log(data);
-    console.log('account:',data.results[0].location);
-    var location = data.results[0].location;
-    $('.js-account').append(location.postcode)
-  }  
-});
-
 //# sourceMappingURL=all.js.map
