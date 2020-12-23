@@ -10312,6 +10312,10 @@ ul, ol, li {
 .drop-shadow {
   -webkit-filter: drop-shadow(5px 5px 5px #333); }
 
+.brightness {
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7); }
+
 .page-link:hover {
   background-color: #fff;
   color: #AC8A46; }

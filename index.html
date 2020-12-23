@@ -43,7 +43,7 @@
                     <a href="shop.html" class="nav-link  text-center mr-0 mr-md-5 py-3">
                       <span class="material-icons d-none d-md-inline mr-1">store</span>Product</a>
                   </li>
-                  <li class="nav-item order-4">
+                  <li class="nav-item order-4 order-md-1">
                     <a href="login.html" class="nav-link  text-center mr-0 mr-md-5 py-3">
                       <span class="material-icons d-none d-md-inline mr-1">person</span>Log in</a>
                   </li>
@@ -63,8 +63,8 @@
                   </li>
               </ul>
           </div>
-        </nav>        
         </div>
+      </nav>        
 
 
   <!--Banner  -->
@@ -125,7 +125,7 @@
     <div class="col-md-6 mb-2 mb-md-0">
       <img class="card_img" src="assets/images/index5.jpg" alt="perfume">
     </div>
-    <div class="col-md-4 offset-md-1">
+    <div class="col-md-6 offset-lg-1 col-lg-4">
       <div class=" pl-0 pl-md-3">
         <ol>
           <li class="mb-3 mb-md-5" data-aos="fade-up" data-aos-duration="1200">
@@ -161,7 +161,7 @@
                     <div class="card_item">
                         <h4><a href="product.html" class="card-link">Poppy & Barley</a></h4>
                         <p class="mb-md-3">Jo Malone</p>
-                        <p>NT$1380<span class="ml-2 text-line">NT$1580</span></p>
+                        <p>NT$1380 <del>NT$1580</del></p>
                     </div>
                 </div>
             </li>
@@ -179,8 +179,8 @@
             <li class="col-md-4 mb-5 mb-md-0">
                 <div class="card card__bg__light">
                     <div class="d-flex align-items-center justify-content-center">
-                        <p class="text-white h3 font-weight-bold position-absolute">Sold out</p>                                
-                        <img src="assets/images/index8.jpg" alt="perfume" class="card_img">
+                        <p class="text-white h3 font-weight-bold position-absolute" style="z-index:1">Sold out</p>                                
+                        <img src="assets/images/index8.jpg" alt="perfume" class="card_img brightness">
                     </div>
                     <div class="card_item ">
                         <h4><a href="product.html" class="card-link">Apple Cider Vinegar Capsule</a></h4>
@@ -216,13 +216,13 @@
 <div class="h-subscribe bg bg-subscribe bg-cover d-flex align-items-end pb-13">
   <div class="container">
     <div class="row">
-      <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
-        <p class="text-dark h3 font-weight-bold mb-3">記得<br>訂閱以獲取更多資訊！
-        </p>
+      <div class="col-md-auto col-lg-4" data-aos="fade-up" data-aos-duration="3000">
+        <label for="subscribe" class="text-dark h3 font-weight-bold mb-3">記得<br>訂閱以獲取更多資訊！
+        </label>
         <form>
           <div class="form-group row no-gutters">
             <div class="col-7">
-              <input type="email" class="form-control form-control-lg rounded-left border border-primary js-input"
+              <input id="subscribe" type="email" class="form-control form-control-lg rounded-left border border-primary js-input"
                 value="" placeholder="Your email address" required>
             </div>
             <div class="col-5">
@@ -250,6 +250,7 @@
         <li class="mr-6"><a class="text-white h5 py-4" href="">Blog</a></li>
         <li><a class="text-white h5 py-4" href="">Contact</a></li>
       </ul>
+   </div>
   </div>
 </footer>
 <a href="#" title="返回頁首">
@@ -257,7 +258,6 @@
 </a>
   <script src="./assets/js/vendors.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./assets/js/all.js"></script>
