@@ -94,6 +94,13 @@ window.onscroll = function () {
     goTop.classList.add('d-none');
   }
 };
+
+$(".goTop").click(function (event) {
+  event.preventDefault();
+  $("html,body").animate({
+    scrollTop: 0
+  }, 700);
+});
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
