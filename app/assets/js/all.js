@@ -96,5 +96,11 @@ window.onscroll = function () {
     goTop.classList.add('d-none');
   }
 };
+$(".goTop").click(function(event){
+  event.preventDefault();
+  $("html,body").animate({
+      scrollTop:0
+  },700)
+})
 
 //# sourceMappingURL=all.js.map
