@@ -72,23 +72,12 @@ $(document).ready(function () {
   });
 });
 
-// $(window).scroll(function (e) {  
-//   if ($(window).scrollTop() <= 0) {
-//     $('.navbar').addClass('bg-white');
-//     $('.navbar').removeClass('bg-light');
-//   } else {
-//     $('.navbar').addClass('bg-light');
-//     $('.navbar').removeClass('bg-white');
-//   }
-// });
 
-//返回頁首
 var scroll_top = 0;
 var goTop = document.querySelector('.goTop');
 
 window.onscroll = function () {
   var scroll_top = window.scrollY;
-  console.log(scroll_top);
 
   if (scroll_top > 80) {
     goTop.classList.remove('d-none');
@@ -96,11 +85,11 @@ window.onscroll = function () {
     goTop.classList.add('d-none');
   }
 };
-$(".goTop").click(function(event){
+$(".goTop").click(function (event) {
   event.preventDefault();
   $("html,body").animate({
-      scrollTop:0
-  },700)
+    scrollTop: 0
+  }, 700)
 })
 
 //# sourceMappingURL=all.js.map

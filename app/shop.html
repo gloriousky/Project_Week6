@@ -26,10 +26,30 @@ current: shop
             <a href="" class="text-white h5 p-3 bg_hover">ZARA</a>
         </li>
     </ul>
-  </div>
+</div>
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./assets/images/products1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./assets/images/products2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./assets/images/products3.jpg" alt=""></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
 
 <!-- Products -->
-<div id= "app" class="container d-flex">
+<div id="app" class="container d-flex">
     <ul class="row">
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
@@ -39,7 +59,8 @@ current: shop
                 <div class="card-body">
                     <h2><a href="" class="h4 font-weight-bold card-title">{{ products[0].name }}</a></h2>
                     <p class="card-text">{{ products[0].title }}</p>
-                    <p class="card-text">NT${{ products[0].price }} <span class="ml-2 text-dark text-line">NT$1,980</span></p>
+                    <p class="card-text">NT${{ products[0].price }} <span
+                            class="ml-2 text-dark text-line">NT$1,980</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -59,7 +80,8 @@ current: shop
                 <div class="card-body">
                     <h2><a href="" class="h4 font-weight-bold card-title">{{ products[1].name }}</a></h2>
                     <p class="card-text">{{ products[1].title }}</p>
-                    <p class="card-text">NT${{ products[1].price }} <span class="ml-2 text-dark text-line">NT$1,680</span></p>
+                    <p class="card-text">NT${{ products[1].price }} <span
+                            class="ml-2 text-dark text-line">NT$1,680</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -119,7 +141,8 @@ current: shop
                 <div class="card-body">
                     <h2><a href="" class="h4 font-weight-bold card-title">{{ products[4].name }}</a></h2>
                     <p class="card-text">{{ products[4].title }}</p>
-                    <p class="card-text">NT${{ products[4].price }} <span class="ml-2 text-dark text-line">NT$1,780</span></p>
+                    <p class="card-text">NT${{ products[4].price }} <span
+                            class="ml-2 text-dark text-line">NT$1,780</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -139,7 +162,8 @@ current: shop
                 <div class="card-body">
                     <h2><a href="" class="h4 font-weight-bold card-title">{{ products[5].name }}</a></h2>
                     <p class="card-text">{{ products[5].title }}</p>
-                    <p class="card-text">NT${{ products[5].price }} <span class="ml-2 text-dark text-line">NT$1,980</span></p>
+                    <p class="card-text">NT${{ products[5].price }} <span
+                            class="ml-2 text-dark text-line">NT$1,980</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -199,7 +223,8 @@ current: shop
                 <div class="card-body">
                     <h2><a href="" class="h4 font-weight-bold card-title">{{ products[8].name }}</a></h2>
                     <p class="card-text">{{ products[8].title }}</p>
-                    <p class="card-text">NT${{ products[8].price }} <span class="ml-2 text-dark text-line">NT$1,580</span></p>
+                    <p class="card-text">NT${{ products[8].price }} <span
+                            class="ml-2 text-dark text-line">NT$1,580</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -213,13 +238,14 @@ current: shop
         </li>
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
-                <a href="product.html"> 
+                <a href="product.html">
                     <img v-bind:src="products[9].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
                     <h2><a href="" class="h4 font-weight-bold card-title">{{ products[9].name }}</a></h2>
                     <p class="card-text">{{ products[9].title }}</p>
-                    <p class="card-text">NT${{ products[9].price }} <span class="ml-2 text-dark text-line">NT$1,880</span></p>
+                    <p class="card-text">NT${{ products[9].price }} <span
+                            class="ml-2 text-dark text-line">NT$1,880</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -233,7 +259,7 @@ current: shop
         </li>
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
-                <a href="product.html"> 
+                <a href="product.html">
                     <img v-bind:src="products[10].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
@@ -253,7 +279,7 @@ current: shop
         </li>
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
-                <a href="product.html"> 
+                <a href="product.html">
                     <img v-bind:src="products[11].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
@@ -273,35 +299,35 @@ current: shop
         </li>
     </ul>
 </div>
-    <!-- pagination -->
-    <ul class="pagination mb-6 mb-md-8 justify-content-center">
+<!-- pagination -->
+<ul class="pagination mb-6 mb-md-8 justify-content-center">
     <li><a class="page-link page-link-underline font-weight-bold h5 border-bottom border-primary" href="">1</a></li>
     <li><a class="page-link font-weight-bold h5" href="">2</a></li>
     <li><a class="page-link font-weight-bold h5" href="">3</a></li>
-    </ul>
+</ul>
 
 <!-- subscribe -->
 <div class="h-subscribe bg bg-subscribe bg-cover d-flex align-items-end pb-13">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
-          <p class="text-dark h3 font-weight-bold mb-3">記得<br>訂閱以獲取更多資訊！
-          </p>
-          <form>
-            <div class="form-group row no-gutters">
-              <div class="col-7">
-                <input type="email" class="form-control form-control-lg rounded-left border border-primary"
-                  value="" placeholder="Your email address" required>
-              </div>
-              <div class="col-5">
-                <button class="btn btn-primary btn-lg rounded-right" type="submit">Subscribe</button>
-              </div>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                <p class="text-dark h3 font-weight-bold mb-3">記得<br>訂閱以獲取更多資訊！
+                </p>
+                <form>
+                    <div class="form-group row no-gutters">
+                        <div class="col-7">
+                            <input type="email" class="form-control form-control-lg rounded-left border border-primary"
+                                value="" placeholder="Your email address" required>
+                        </div>
+                        <div class="col-5">
+                            <button class="btn btn-primary btn-lg rounded-right" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 <!-- modal  -->
 <div class="modal fade " id="wishlist" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
