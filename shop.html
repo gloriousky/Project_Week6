@@ -8,9 +8,9 @@
   <title>D'Perfume香水商城</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -59,7 +59,7 @@
                   </li>
                   <li class="nav-item order-5">
                     <a href="#" class="nav-link  text-center py-3">
-                      <span class="material-icons d-none d-md-inline mr-1">shopping_cart</span>Cart(3)</a>
+                      <span class="material-icons d-none d-md-inline mr-1">shopping_cart</span>Cart</a>
                   </li>
               </ul>
           </div>
@@ -89,19 +89,20 @@
             <a href="" class="text-white h5 p-3 bg_hover">ZARA</a>
         </li>
     </ul>
-  </div> 
+  </div>
+
 <!-- Products -->
-<div class="container">
+<div id= "app" class="container d-flex">
     <ul class="row">
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products1.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[0].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Woody & Wild</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,680 <span class="ml-2 text-dark text-line">NT$1,980</span></p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[0].name }}</a></h2>
+                    <p class="card-text">{{ products[0].title }}</p>
+                    <p class="card-text">NT${{ products[0].price }} <span class="ml-2 text-dark text-line">NT$1,980</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -116,12 +117,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products2.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[1].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Light Floral</a></h2>
-                    <p class="card-text">Chanel</p>
-                    <p class="card-text">NT$1,280 <span class="ml-2 text-dark text-line">NT$1,680</span></p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[1].name }}</a></h2>
+                    <p class="card-text">{{ products[1].title }}</p>
+                    <p class="card-text">NT${{ products[1].price }} <span class="ml-2 text-dark text-line">NT$1,680</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -136,12 +137,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products3.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[2].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Woody & Wild</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,780</p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[2].name }}</a></h2>
+                    <p class="card-text">{{ products[2].title }}</p>
+                    <p class="card-text">NT${{ products[2].price }}</p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -156,12 +157,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products4.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[3].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Poppy & Barley</a></h2>
-                    <p class="card-text">Chanel</p>
-                    <p class="card-text">NT$1,580</p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[3].name }}</a></h2>
+                    <p class="card-text">{{ products[3].title }}</p>
+                    <p class="card-text">NT${{ products[3].price }}</p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -176,12 +177,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products5.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[4].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Woody & Wild</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,380 <span class="ml-2 text-dark text-line">NT$1,580</span></p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[4].name }}</a></h2>
+                    <p class="card-text">{{ products[4].title }}</p>
+                    <p class="card-text">NT${{ products[4].price }} <span class="ml-2 text-dark text-line">NT$1,780</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -196,12 +197,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products6.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[5].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Light Floral</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,380 <span class="ml-2 text-dark text-line">NT$1,580</span></p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[5].name }}</a></h2>
+                    <p class="card-text">{{ products[5].title }}</p>
+                    <p class="card-text">NT${{ products[5].price }} <span class="ml-2 text-dark text-line">NT$1,980</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -216,12 +217,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products7.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[6].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Woody & Wild</a></h2>
-                    <p class="card-text">Chanel</p>
-                    <p class="card-text">NT$1,680</p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[6].name }}</a></h2>
+                    <p class="card-text">{{ products[6].title }}</p>
+                    <p class="card-text">NT${{ products[6].price }}</p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -236,12 +237,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products8.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[7].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Poppy & Barley</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,580</p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[7].name }}</a></h2>
+                    <p class="card-text">{{ products[7].title }}</p>
+                    <p class="card-text">NT${{ products[7].price }}</p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -256,12 +257,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html">
-                    <img src="assets/images/products9.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[8].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Light Floral</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,380 <span class="ml-2 text-dark text-line">NT$1,580</span></p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[8].name }}</a></h2>
+                    <p class="card-text">{{ products[8].title }}</p>
+                    <p class="card-text">NT${{ products[8].price }} <span class="ml-2 text-dark text-line">NT$1,580</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -276,12 +277,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html"> 
-                    <img src="assets/images/products10.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[9].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Poppy & Barley</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,380 <span class="ml-2 text-dark text-line">NT$1,580</span></p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[9].name }}</a></h2>
+                    <p class="card-text">{{ products[9].title }}</p>
+                    <p class="card-text">NT${{ products[9].price }} <span class="ml-2 text-dark text-line">NT$1,880</span></p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -296,12 +297,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html"> 
-                    <img src="assets/images/products11.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[10].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Light Floral</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,380</p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[10].name }}</a></h2>
+                    <p class="card-text">{{ products[10].title }}</p>
+                    <p class="card-text">NT${{ products[10].price }}</p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -316,12 +317,12 @@
         <li class="col-6 col-sm-4 col-md-3 mb-5 mb-md-9">
             <div class="card">
                 <a href="product.html"> 
-                    <img src="assets/images/products12.jpg" alt="perfume" class="card_img card__hover">
+                    <img v-bind:src="products[11].imageUrl" alt="perfume" class="card_img card__hover">
                 </a>
                 <div class="card-body">
-                    <h2><a href="" class="h4 font-weight-bold card-title">Poppy & Barley</a></h2>
-                    <p class="card-text">Jo Malone</p>
-                    <p class="card-text">NT$1,680</p>
+                    <h2><a href="" class="h4 font-weight-bold card-title">{{ products[11].name }}</a></h2>
+                    <p class="card-text">{{ products[11].title }}</p>
+                    <p class="card-text">NT${{ products[11].price }}</p>
                 </div>
                 <div class="card-footer">
                     <a href="" class="card-link" data-toggle="modal" data-target="#wishlist">
@@ -334,13 +335,13 @@
             </div>
         </li>
     </ul>
+</div>
     <!-- pagination -->
     <ul class="pagination mb-6 mb-md-8 justify-content-center">
     <li><a class="page-link page-link-underline font-weight-bold h5 border-bottom border-primary" href="">1</a></li>
     <li><a class="page-link font-weight-bold h5" href="">2</a></li>
     <li><a class="page-link font-weight-bold h5" href="">3</a></li>
     </ul>
-</div>
 
 <!-- subscribe -->
 <div class="h-subscribe bg bg-subscribe bg-cover d-flex align-items-end pb-13">
@@ -383,7 +384,7 @@
         </div>
     </div>
 </div>
-<div class="modal  fade " id="shoppingcart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal  fade" id="shoppingcart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered " role="document">
         <div class="modal-content">
@@ -421,14 +422,135 @@
 <a href="#" title="返回頁首">
   <span class="material-icons goTop d-none hvr-pulse">keyboard_arrow_up</span>
 </a>
+
+
+
   <script src="./assets/js/vendors.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script src="https://unpkg.com/vue@next"></script>
   <script>
    AOS.init();
+   const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
   </script>
+
+<script>
+const products =[{
+  id: '1',
+  name: 'Woody & Wild',
+  title: 'Jo Malone',
+  imageUrl: 'assets/images/products1.jpg',
+  price: '1,680' ,
+  inStock: true
+},{
+  id: '2',
+  name: 'Light Floral',
+  title: 'Chanel',
+  imageUrl: 'assets/images/products2.jpg',
+  price: '1,280', 
+},{
+  id: '3',
+  name: 'Poppy & Barley',
+  title: 'Jo Malone',
+  imageUrl: 'assets/images/products3.jpg',
+  price: '1,780', 
+},{
+  id: '4',
+  name: 'Woody & Rustic',
+  title: 'Chanel',
+  imageUrl: 'assets/images/products4.jpg',
+  price: '1,880',
+},{
+  id: '5',
+  name: 'Light Floral',
+  title: 'Jo Malone',
+  imageUrl: 'assets/images/products5.jpg',
+  price: '1,580',
+},{
+  id: '6',
+  name: 'Woody & Wild',
+  title: 'Chanel',
+  imageUrl: 'assets/images/products6.jpg',
+  price: '1,680',
+},{
+  id: '7',
+  name: 'Poppy & Barley',
+  title: 'Jo Malone',
+  imageUrl: 'assets/images/products7.jpg',
+  price: '1,880',
+},{
+  id: '8',
+  name: 'Woody & Rustic',
+  title: 'Chanel',
+  imageUrl: 'assets/images/products8.jpg',
+  price: '1,580',
+},{
+  id: '9',
+  name: 'Woody & Wild',
+  title: 'Jo Malone',
+  imageUrl: 'assets/images/products9.jpg',
+  price: '1,280',
+},{
+  id: '10',
+  name: 'Poppy & Barley',
+  title: 'Chanel',
+  imageUrl: 'assets/images/products10.jpg',
+  price: '1,580',
+},{
+  id: '11',
+  name: 'Light Floral',
+  title: 'Jo Malone',
+  imageUrl: 'assets/images/products11.jpg',
+  price: '1,680',
+},{
+  id: '12',
+  name: 'Woody & Rustic',
+  title: 'Chanel',
+  imageUrl: 'assets/images/products12.jpg',
+  price: '1,280',
+},
+]
+const app = {
+  //option api
+  data() {
+    return {
+      products: [],
+      temp: {}
+    }
+  },
+  methods: {
+
+  },
+  created() {
+    this.products = products
+  }
+};
+
+Vue.createApp(app).mount('#app')
+  
+</script>
 </body>
 
 </html>
