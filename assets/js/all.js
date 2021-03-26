@@ -70,23 +70,12 @@ $(document).ready(function () {
       $('.js-password-form').removeClass('was-validated');
     }
   });
-}); // $(window).scroll(function (e) {  
-//   if ($(window).scrollTop() <= 0) {
-//     $('.navbar').addClass('bg-white');
-//     $('.navbar').removeClass('bg-light');
-//   } else {
-//     $('.navbar').addClass('bg-light');
-//     $('.navbar').removeClass('bg-white');
-//   }
-// });
-//返回頁首
-
+});
 var scroll_top = 0;
 var goTop = document.querySelector('.goTop');
 
 window.onscroll = function () {
   var scroll_top = window.scrollY;
-  console.log(scroll_top);
 
   if (scroll_top > 80) {
     goTop.classList.remove('d-none');
